@@ -27,5 +27,8 @@
     <ClCompile Include="pair2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="동적프로그래밍.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
