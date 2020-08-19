@@ -1,4 +1,2 @@
-﻿  BubbleSort.cpp
-C:\Users\Hoon\Desktop\dev\Algorithm\Algorithm\BubbleSort.cpp(8,9): warning C4101: 'j' :참조되지 않은 지역 변수입니다.
-C:\Users\Hoon\Desktop\dev\Algorithm\Algorithm\BubbleSort.cpp(8,6): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+﻿  sort.cpp
   Algorithm.vcxproj -> C:\Users\Hoon\Desktop\dev\Algorithm\Debug\Algorithm.exe
