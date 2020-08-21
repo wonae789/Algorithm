@@ -36,11 +36,40 @@
     <ClCompile Include="2xn타일링.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="연습.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="pair3.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="getline.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="연습.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="switch.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="아스키코드 예시.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="min_max.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="별찍기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="pow.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="input.txt">
+      <Filter>소스 파일</Filter>
+    </Text>
+    <Text Include="output.txt">
+      <Filter>소스 파일</Filter>
+    </Text>
+    <Text Include="memo.txt">
+      <Filter>소스 파일</Filter>
+    </Text>
   </ItemGroup>
 </Project>

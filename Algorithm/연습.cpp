@@ -1,15 +1,20 @@
-#include<iostream>
+#include <iostream>
 #include<string>
+#include<cmath>
 using namespace std;
 
-int main(void)
-{
-	string a;
 
-	while (1)
+int main()
+{
+	string str;
+	int N;
+	cin >> N;
+
+	for (int i = 1; i < pow(10,N); i++) // pow 승수함수 10 의 N제곱, cmath 인클루드 필요함.
 	{
-		cin >> a;
-		cout << a;
+		str[i] = i;
+
+
 	}
 
 
