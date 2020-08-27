@@ -60,6 +60,12 @@
     <ClCompile Include="pow.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="vector.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DFS.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
