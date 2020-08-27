@@ -60,13 +60,10 @@
     <ClCompile Include="pow.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="vector.cpp">
+    <ClCompile Include="DFS,BFS%28fill%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="DFS.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="BFS.cpp">
+    <ClCompile Include="vector%28endl%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
