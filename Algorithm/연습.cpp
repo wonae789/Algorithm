@@ -1,68 +1,39 @@
-//https://www.youtube.com/watch?v=nNZuzNny2-k
-#include <iostream>
-#include <vector>
-#include <algorithm>
-#define endl '\n'
+//https://www.acmicpc.net/problem/10773
+#include<iostream>
+#include<stack>
 
 using namespace std;
 
-int N, M, V;
-
-int graph[1001][1001];
-int visit[1001];
-int queue[1001];
-int front, rear; // 큐를 푸시, 팝 할때 쓴다.
-void bfs(int idx)
+int main(void)
 {
-	queue[rear++] = idx;
-	visit[idx] = 1;
-	while (front < rear)
+	stack<int> st;
+	int sum = 0;
+	int K;
+	
+	cin >> K;
+
+	for (int i = 0; i < K; i++)
 	{
-		int current_idx = queue[front++];
-		cout << current_idx << ' ';
-		for (int next_idx = 1; next_idx <= N; next_idx++)
+		int num;
+		cin >> num;
+
+		if (num == 0)
 		{
-			if (graph[current_idx][next_idx] == 1 && visit[next_idx] == 0)
-			{
-				queue[rear++] = next_idx;
-				visit[next_idx] = 1;
-			}
+			st.pop();
+		}
+		else
+		{
+			st.push(num);
 		}
 	}
-}
-
-void dfs(int idx)
-{
-	visit[idx] = 1;
-	cout << idx << ' ';
-
-
-	for (int next_idx = 1; next_idx <= N; next_idx++)
+	//모든 원소를 더하는 방법
+	while (!st.empty())
 	{
-		if (graph[idx][next_idx] == 1 && visit[next_idx] == 0)
-		{
-			dfs(next_idx);
-		}
+		sum += st.top();
+		st.pop();
 	}
-}
 
-int main()
-{
-	cin >> N >> M >> V;
+	cout << sum;
 
-	for (int i = 0; i < M; i++)
-	{
-		int V1, V2;
-		cin >> V1 >> V2;
-		graph[V1][V2] = 1;
-		graph[V2][V1] = 1;
-	}
-	int start_idx = V;
-	dfs(start_idx);
-
-	fill(visit, visit + 1001, 0);
-	cout << endl;
-
-	bfs(start_idx);
 	return 0;
 }
