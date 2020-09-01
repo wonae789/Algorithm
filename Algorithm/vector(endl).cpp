@@ -22,8 +22,12 @@ int main()
 		vec.push_back(PUT);
 	}
 
-	sort(vec.begin(), vec.end());
-
+	sort(vec.begin(), vec.end()); // 오름차순
+	/*
+	내림차순정렬은 #include <funtional> 추가하고
+	sort(vec.begin(), vec.end(), greater<int>()); 이렇게 쓴다
+	https://blankspace-dev.tistory.com/160?category=647810
+	*/
 	cout << vec[K - 1];
 
 	return 0;

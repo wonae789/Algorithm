@@ -7,3 +7,32 @@
 
 
 랭킹 28위 카톡방  YunGoon
+
+
+
+//백터 자료형
+//	for (vector<int>::size_type i = 0; i < a[x].size(); i++)
+//	{
+//		int y = a[x][i];
+//		dfs(y);
+//	}
+
+// #define endl '\n'
+
+/*
+int arr[10]; 이렇게 있으면
+begin(end) == &arr[0]  -> 포인터
+front(back) == arr[0]   -> 값
+이런 느낌이다.
+
+큐의 조회는 맨앞과 맨뒤 요소 말고는 안됨.
+
+*/
+
+/*
+sort(vec.begin(), vec.end()); // 오름차순
+
+내림차순정렬은 #include <functional> 추가하고
+sort(vec.begin(), vec.end(), greater<int>()); 이렇게 쓴다
+https://blankspace-dev.tistory.com/160?category=647810
+*/
