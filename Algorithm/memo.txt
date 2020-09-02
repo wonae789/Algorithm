@@ -1,5 +1,5 @@
 <input.txt>output.txt
-
+#define _CRT_SECURE_NO_WARNINGS
 
 ·©Å· 15 À§  snrnsidy
 ·©Å· 30 À§  baactree
