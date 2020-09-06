@@ -1,50 +1,47 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
-//#include<queue>
-//#include<stack>
 #include <vector>
-//#include <algorithm>
+//#include <string>
+//#include <queue>
+//#include <stack>
+#include <algorithm>
+//#include <cmath>
 #define endl '\n'
 
 using namespace std;
 
 int main()
 {
+	int test_case;
+	int T;
+
+	scanf("%d", &T);
+
 	vector<int> v;
-	int N;
-	scanf("%d", &N);
 
-	for (int i = 0; i < N; i++)
+	for (test_case = 1; test_case <= T; ++test_case)
 	{
-		int num;
-		scanf("%d", &num);
-
-		if (num == 0)
+		v.clear();
+		for (int i = 0; i < 10; i++)
 		{
-			for (int i = 0; i < v.size(); i++)
-			{
-				abs(v[i]);
-			}
-		}
-
-		else
-		{
+			int num;
+			scanf("%d ", &num);
 			v.push_back(num);
 		}
 
+		sort(v.begin(), v.end());
+		double sum = 0;
+		for (int i = 1; i < v.size()-1; i++)
+		{
+			sum += v[i];
+		}
+
+		double aver;
+		aver = sum / (v.size() - 2);
+		printf("#%d %.f\n", test_case, aver);
 	}
 
-
-
-
-
-
-
-
-	v.push_back(-1);
-	v.push_back(3);
-
-	cout << abs(v[0]);
-
+	
 	return 0;
 }
+

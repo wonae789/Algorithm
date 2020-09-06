@@ -1,5 +1,9 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include<iostream>
-#include<string>
+//#include<string>
+#include <vector>
+#include <algorithm>
+
 #define endl '\n'
 using namespace std;
 
@@ -7,12 +11,9 @@ using namespace std;
 
 int main(void)
 {
-
-	string s;
-
-	cin >> s;
-
-	cout << s.size() << endl;;
-	cout << s.length() << endl;;
-
+	double num = 0;
+	double num2 = 16;
+	double num3 = 3;
+	num = ceil(num2 / num3);
+	printf("%f", num);
 }
