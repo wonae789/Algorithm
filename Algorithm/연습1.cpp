@@ -20,7 +20,7 @@ int main()
 	for (test_case = 1; test_case <= T; ++test_case)
 	{
 
-		for (int)
+		
 
 
 

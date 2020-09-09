@@ -12,36 +12,23 @@ using namespace std;
 
 int main()
 {
-	int test_case;
-	int T;
-
-	scanf("%d", &T);
-
-	vector<int> v;
-
-	for (test_case = 1; test_case <= T; ++test_case)
+	int n = 5;
+	int answer = 1;
+	for (int i = 3; i <= n; i++)
 	{
-		v.clear();
-		for (int i = 0; i < 10; i++)
+		int toggle = 0;
+		for (int j = i - 1; j >= 1; j--)
 		{
-			int num;
-			scanf("%d ", &num);
-			v.push_back(num);
+			if (j == 1 && toggle == 0)
+				answer++;
+			else if (i % j == 0)
+				toggle = 1;
 		}
 
-		sort(v.begin(), v.end());
-		double sum = 0;
-		for (int i = 1; i < v.size()-1; i++)
-		{
-			sum += v[i];
-		}
-
-		double aver;
-		aver = sum / (v.size() - 2);
-		printf("#%d %.f\n", test_case, aver);
 	}
 
-	
+	printf("%d", answer);
+
 	return 0;
 }
 
