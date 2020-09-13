@@ -129,6 +129,15 @@
     <ClCompile Include="substr.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="toggle대신사용.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="배열초기화(fill_n).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stringTolong변환.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="input.txt">
