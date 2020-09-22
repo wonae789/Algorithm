@@ -1,12 +1,13 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
-//#include <vector>
-//#include <string>
-//#include <cstring>
-//#include <queue>
+#include <vector>
+#include <string>
+#include <algorithm>
 //#include <stack>
-//#include <algorithm>
+//#include <queue>
 //#include <cmath>
+//#include <cstring>
+//#include <cstdlib>
 #define endl '\n'
 
 using namespace std;
